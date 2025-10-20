@@ -1,20 +1,12 @@
 #!/usr/bin/python3
-"""
-1-top_ten
-"""
+"""Script that fetch 10 hot post for a given subreddit."""
 import requests
 
 
 def top_ten(subreddit):
-    """
-    Queries the Reddit API and prints the titles of the first 10 hot posts for a given subreddit.
-
-    Args:
-        subreddit (str): The name of the subreddit.
-
-    Returns:
-        None: Prints titles or None if invalid.
-    """
+   """Return number of subscribers if @subreddit is valid subreddit.
+    if not return 0."""
+   
     if not subreddit:
         print(None)
         return
